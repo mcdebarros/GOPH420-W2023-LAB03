@@ -76,7 +76,9 @@ def main():
         axs[i].set_xlabel("Magnitude [M]", fontsize=8)
         axs[i].set_ylabel("log(N) events", fontsize=8)
         axs[i].legend(fontsize=8)
+        axs[i].grid()
     plt.tight_layout()
+    plt.grid()
     plt.savefig('C:\\Users\\mcdeb\\GOPH420\\GOPH420-W2023-LAB03\\data\\models.png')
 
     #Displays the plots
