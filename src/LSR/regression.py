@@ -1,5 +1,6 @@
 import numpy as np
 
+#Performs linear LSR to fit a model based on inputs
 def multi_regress(y,z):
 
     ztz = np.matmul(np.transpose(z),z)

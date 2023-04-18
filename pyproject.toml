@@ -2,10 +2,10 @@
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 [project]
-name = "newton_raphson"
+name = "regression"
 version = "0.0.1"
 authors = [
-{ name="Brandon Karchewski", email="brandon.karchewski@ucalgary.ca" },
+{ name="Mauricio de Barros", email="mauricio.debarros@ucalgary.ca" },
 ]
 description="Linear least squares regression implementation"
 readme = "README.md"
@@ -20,4 +20,4 @@ classifiers = [
 "License :: OSI Approved :: GNU General Public License v3",
 ]
 [project.urls]
-"Homepage" = "https://github.com/mcdebarros/goph-420-lab02"
+"Homepage" = "https://github.com/mcdebarros/GOPH420-W2023-LAB03"

@@ -3,4 +3,4 @@ Geophysicists
 *Semester:* W2023
 *Instructor:* B. Karchewski
 *Author:* M. de Barros
-An example repository setup for a simple Python package
+Implementation of linear least squares regression
