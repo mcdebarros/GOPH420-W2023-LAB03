@@ -21,7 +21,7 @@ def main():
 
     #5 distinct events are evident from fig. 1: Creates boundaries for these events and plotting increments for later figures.
     boundaries = [1e-8,34,45,71,96,time[-1]]
-    incr = np.array([-1.0,-0.75,-0.5,-0.25,0,0.25,0.5,0.75,1.0])
+    incr = np.array([-0.5,-0.25,0,0.25,0.5,0.75,1.0])
 
     #Plots vertical lines indicating event boundaries
     plt.figure()
