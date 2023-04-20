@@ -22,7 +22,6 @@ def multi_regress(y,z):
     model: numpy.ndarray, shape = (m,1)
         Vector of model output
 """
-
     ztz = np.matmul(np.transpose(z),z)
     zty = np.matmul(np.transpose(z),y)
     a = np.matmul(np.linalg.inv(ztz),zty)
