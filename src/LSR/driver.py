@@ -40,10 +40,6 @@ def main():
         while i > time[k]:
             k = k + 1
         index = np.append(index,k)
-    
-
-    for i in range(5):
-        print(index[i+1]-index[i])
 
     #Counts the number of events of each magnitude in incr that occur within each boundary set
     def count(slices, window):
