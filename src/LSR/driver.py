@@ -5,7 +5,7 @@ from regression import multi_regress
 def main():
 
     #Reads input file and creates lists of timestamps and magnitudes. Creates a list of plot colors.
-    input_data = np.loadtxt("C:\\Users\\mcdeb\\GOPH420\\GOPH420-W2023-LAB03\\data\\M_data.txt")
+    input_data = np.loadtxt(".\\data\\M_data.txt")
     time = (input_data[:,0])
     mag = (input_data[:,1])
     colors = ["r","b","g","y","c"]
@@ -17,7 +17,7 @@ def main():
     plt.title("Figure 1: Earthquake Data")
     plt.plot(time,mag,"c.")
     plt.grid()
-    plt.savefig('C:\\Users\\mcdeb\\GOPH420\\GOPH420-W2023-LAB03\\data\\data.png')
+    plt.savefig('.\\data\\data.png')
 
     #5 distinct events are evident from fig. 1: Creates boundaries for these events and plotting increments for later figures.
     boundaries = [1e-8,34,45,71,96,time[-1]]
@@ -31,7 +31,7 @@ def main():
     plt.plot(time,mag,"c.")
     plt.vlines(boundaries[1:5],-1.5,2)
     plt.grid()
-    plt.savefig('C:\\Users\\mcdeb\\GOPH420\\GOPH420-W2023-LAB03\\data\\boundaries.png')
+    plt.savefig('.\\data\\boundaries.png')
     
     #Creates a list of indices in time where boundary cutoffs occur
     k = 0
@@ -73,7 +73,7 @@ def main():
         plt.plot(incr,n_list[i],f"{colors[i]}.-",label = f"Event {i+1}")
     plt.legend()
     plt.grid()
-    plt.savefig('C:\\Users\\mcdeb\\GOPH420\\GOPH420-W2023-LAB03\\data\\events.png')
+    plt.savefig('.\\data\\events.png')
 
     #Creates a figure with 5 subplots plotting log(n) events as a function of magnitude based on model output
     fig, axs = plt.subplots(5, 1, figsize=(8, 10))
@@ -88,7 +88,7 @@ def main():
         axs[i].legend(fontsize=8)
         axs[i].grid()
     plt.tight_layout()
-    plt.savefig('C:\\Users\\mcdeb\\GOPH420\\GOPH420-W2023-LAB03\\data\\models.png')
+    plt.savefig('.\\data\\models.png')
 
     #Displays the plots
     plt.show()
